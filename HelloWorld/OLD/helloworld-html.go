@@ -31,8 +31,8 @@ func main() {
 			// </html>`)
 
 			// use separated html  (tpl = template)
-			tpl, _ := template.ParseFiles("templates/hello.html")
-			tpl.Execute(w, &user)
+			tpl, _ := template.ParseFiles("templates/hello.html") // get the template from file
+			tpl.Execute(w, &user)                                 // use the template
 		})
 
 	// func ListenAndServe(addr string, handler Handler) error
