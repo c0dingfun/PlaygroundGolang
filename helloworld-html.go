@@ -5,7 +5,7 @@ import (
 	"net/http"
 )
 
-// simulate a user
+// User struct
 type User struct {
 	Name string
 }
